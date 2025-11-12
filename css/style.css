@@ -15,39 +15,47 @@ body {
 }
 
 /* Header styling */
+/* ===== HEADER LAYOUT ===== */
 header {
-    background: #004aad;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background: #004aad;
+  color: white;
+  padding: 1rem 0;
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
+/* ===== NAVIGATION ===== */
 nav ul {
-    list-style: none;
-    margin-top: 10px;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+nav a:hover {
+  text-decoration: underline;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+/* ===== HAMBURGER BUTTON ===== */
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 /* Main content */
@@ -81,17 +89,35 @@ footer {
 }
 
 /* Different Screen Sizes */
-@media (max-width: 800px)
-{
-  nav ul 
-  {
-    flex-direction: column;
-    align-items: center;
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 700px) {
+  header .container {
+    display:block;
+    flex-wrap: wrap;
+    text-align: center; /* allow nav to move below */
   }
 
-  header .container
-  {
-    flex-direction: column;
-    text-align: center;
+  /* show the hamburger */
+  .menu-toggle {
+    display: block;
   }
+
+  /* hide nav by default */
+  nav {
+    width: 100%;
+    display: none;
+  }
+
+  /* when active (menu open) */
+  nav.active {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
 }
