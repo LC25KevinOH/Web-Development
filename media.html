@@ -8,6 +8,8 @@
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Link to media-specific CSS file -->
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
     <!--Auto-filled Header-->
@@ -15,15 +17,36 @@
 
     <!--Main Content Section-->
     <main>
-        <section>
-            <h2>Home</h2>
-            <p>This is a basic HTML and CSS starter template you can build on.</p>
-        </section>
-
-        <section>
-            <h2>Content</h2>
-            <p>Replace this text with your own content.</p>
-        </section>
+        <h1>Media Gallery</h1>
+    
+        <div class="gallery-container">
+            <!-- Gallery items -->
+            <div class="gallery-item">
+                <img src="media/image1.jpg" alt="Beautiful landscape">
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="media/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <img src="media/image2.jpg" alt="City skyline">
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="media/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    
+        <!-- Optional: Simple lightbox overlay -->
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-media" src="" alt="">
+        </div>
     </main>
 
     <!--Auto-filled Footer-->
@@ -32,5 +55,6 @@
     <!--Necessary Javascript-->
     <script src="js/includes.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/media.js"></script>
 </body>
 </html>
