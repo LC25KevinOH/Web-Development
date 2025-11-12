@@ -92,7 +92,8 @@ footer {
 /* ===== MOBILE STYLES ===== */
 @media (max-width: 700px) {
   header .container {
-    display:block;
+    display:flex;
+    flex-direction: column;
     flex-wrap: wrap;
     text-align: center; /* allow nav to move below */
   }
