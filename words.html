@@ -8,6 +8,8 @@
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Link to words-specific CSS file -->
+    <link rel="stylesheet" href="css/words.css" />
 </head>
 <body>
     <!--Auto-filled Header-->
@@ -15,14 +17,40 @@
 
     <!--Main Content Section-->
     <main>
-        <section>
-            <h2>Home</h2>
-            <p>This is a basic HTML and CSS starter template you can build on.</p>
+        <section class="center">
+            <h2>Common Words and Useful Phrases</h2>
+            <p>
+                Here are some common words and phrases you might come across. 
+                They may be useful in your travels.
+            </p>
         </section>
-
         <section>
-            <h2>Content</h2>
-            <p>Replace this text with your own content.</p>
+            <div class="phrase-list">
+                <div class="phrase-item">
+                    <button class="phrase">Ciao</button>
+                    <div class="translation">Hello / Hi</div>
+                </div>
+            
+                <div class="phrase-item">
+                    <button class="phrase">Grazie</button>
+                    <div class="translation">Thank you</div>
+                </div>
+            
+                <div class="phrase-item">
+                    <button class="phrase">Per favore</button>
+                    <div class="translation">Please</div>
+                </div>
+            
+                <div class="phrase-item">
+                    <button class="phrase">Dov’è il bagno?</button>
+                    <div class="translation">Where is the bathroom?</div>
+                </div>
+            
+                <div class="phrase-item">
+                    <button class="phrase">Quanto costa?</button>
+                    <div class="translation">How much does it cost?</div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -32,5 +60,6 @@
     <!--Necessary Javascript-->
     <script src="js/includes.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/words.js"></script>
 </body>
 </html>
