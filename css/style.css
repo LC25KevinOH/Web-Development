@@ -75,6 +75,15 @@ main {
     margin: 10px auto;
 }
 
+.center {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.benefit {
+    padding-bottom: 1rem;
+}
+
 #landing-text {
     text-align: center;
     margin-bottom: 20px;
