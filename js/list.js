@@ -13,8 +13,8 @@ function addTask() {
   li.innerHTML = `
     <span>${text}</span>
     <div>
-      <button class="edit" title="Edit">✏️</button>
-      <button class="delete" title="Delete">🗑️</button>
+      <button class="edit" title="Edit"><i class="fa-solid fa-paintbrush" id="font-a"></i></button>
+      <button class="delete" title="Delete"><i class="fa-solid fa-trash-can" id="font-a"></i></button>
     </div>
   `;
 
@@ -42,8 +42,8 @@ list.addEventListener('click', (e) => {
     li.innerHTML = `
       <input type="text" class="edit-input" value="${oldText}" />
       <div>
-        <button class="save" title="Save">💾</button>
-        <button class="delete" title="Delete">🗑️</button>
+        <button class="save" title="Save"><i class="fa-solid fa-box-archive" id="font-a"></i></button>
+        <button class="delete" title="Delete"><i class="fa-solid fa-trash-can" id="font-a"></i></button>
       </div>
     `;
     li.querySelector('.edit-input').focus();
@@ -59,8 +59,8 @@ list.addEventListener('click', (e) => {
     li.innerHTML = `
       <span>${newText}</span>
       <div>
-        <button class="edit" title="Edit">✏️</button>
-        <button class="delete" title="Delete">🗑️</button>
+        <button class="edit" title="Edit"><i class="fa-solid fa-paintbrush" id="font-a"></i></button>
+        <button class="delete" title="Delete"><i class="fa-solid fa-trash-can" id="font-a"></i></button>
       </div>
     `;
   }

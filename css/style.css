@@ -89,13 +89,13 @@ main {
     margin-bottom: 20px;
 }
 
-#burger {
+#font-a { /*Currently [6] icons in use*/
   background-color: DodgerBlue;
   pointer-events: none;
 }
 
 /* Darker background on mouse-over */
-#burger:hover {
+#font-a:hover {
   background-color: RoyalBlue;
 }
 /* Footer styling */
