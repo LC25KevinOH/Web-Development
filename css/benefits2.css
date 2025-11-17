@@ -1,0 +1,15 @@
+.benefit {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 4px solid #008000; /* green accent */
+    background: #f2f2f2; /* light grey */
+    border-radius: 4px;
+}
+
+.benefit h2 {
+    color: #d40000; /* red */
+}
+
+.center a {
+    color: #008000;
+}
