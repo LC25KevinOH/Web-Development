@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Spline Sans", sans-serif;
     background-color: #fafafa;
     margin: 0;
     padding: 0;
@@ -23,6 +23,7 @@ header {
 .phrase-item {
     border-bottom: 1px solid #ddd;
     margin-bottom: 1rem;
+    font-family: "Spline Sans", sans-serif;
 }
 
 .phrase {
@@ -34,6 +35,7 @@ header {
     padding: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: "Spline Sans", sans-serif;
 }
 
 .phrase:hover {
@@ -47,4 +49,5 @@ header {
     border-left: 3px solid #0072bb;
     font-style: italic;
     text-align: center;
+    font-family: "Spline Sans", sans-serif;
 }

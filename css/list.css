@@ -1,7 +1,7 @@
 /* ===== To-Do List Styles ===== */
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f5f7fa;
+  font-family: "Spline Sans", sans-serif;
+  background: gray;
   color: white;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,11 @@ body {
 }
 
 h1 {
+  /*
   color: white;
   background: #004aad;
+  */
+  color: black;
 }
 
 .todo-container {
@@ -20,8 +23,8 @@ h1 {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 100%;
-  max-width: 500px;
+  width: 80%;
+  max-width: 2000px;
 }
 
 .todo-input {
