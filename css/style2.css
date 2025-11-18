@@ -58,61 +58,15 @@ nav a:hover {
     color: #dcdcdc; /* Light grey hover */
 }
 
-/* Mobile menu toggle */
+/*-------------------------
+    Mobile menu toggle 
+--------------------------*/
 .menu-toggle {
     display: none;
     background: none;
     border: none;
     color: white;
     font-size: 1.6rem;
-}
-
-/* RESPONSIVE NAV */
-@media (max-width: 768px) {
-    /*
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: #008000;
-        padding: 20px;
-        margin-top: 10px;
-        border: 2px solid #d40000;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-    */
-
-    header .container {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center; /* allow nav to move below */
-  }
-
-  /* show the hamburger */
-  .menu-toggle {
-    display: block;
-  }
-
-  /* hide nav by default */
-  nav {
-    width: 100%;
-    display: none;
-  }
-
-  /* when active (menu open) */
-  nav.active {
-    display: block;
-    margin-top: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
 }
 
 /* ---------------------------
@@ -161,6 +115,7 @@ p {
 #landing-text {
     margin-top: 20px;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 #landing-image {
@@ -186,4 +141,159 @@ p {
   font-size: 2rem;
   width: 4rem;
   height: 4rem;  
+}
+
+/* -----------------
+   ANIMATIONS
+----------------- */
+#square-collection {
+    display: none;
+}
+.square {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px; /*Could be 20 or 40px*/
+    background-color: #008000;
+    margin: 4px auto;
+    animation: moveSquare 3s infinite ease-in;
+}
+
+.inner-square {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px; /*Could be 10 or 20px*/
+    background-color: #d40000; /* Red */
+    position: relative;
+    top: 20px;
+    left: 20px;
+    animation: miniSquare 3s infinite ease-in;
+}
+/*
+@keyframes moveSquare {
+    0% {
+        transform: translateX(0px) translateY(-30px) rotate(0deg);
+        background-color: #008000;
+    }
+    25% {
+        transform: translateX(30px) translateY(0px) rotate(90deg);
+        
+    }
+    50% {
+        transform: translateX(0px) translateY(30px) rotate(180deg);
+        background-color: #d40000;
+    }
+    75% {
+        transform: translateX(-30px) translateY(0px) rotate(270deg);
+        
+    }
+    100% {
+        transform: translateX(0px) translateY(-30px) rotate(360deg);
+        background-color: #008000;
+    }
+}
+*/
+
+@keyframes moveSquare {
+    0% {
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+        background-color: #008000;
+    }
+    25% {
+        transform: translateX(25px) translateY(0px) rotate(90deg);
+        
+    }
+    50% {
+        transform: translateX(0px) translateY(0px) rotate(180deg);
+        background-color: #d40000;
+    }
+    75% {
+        transform: translateX(-25px) translateY(0px) rotate(270deg);
+        
+    }
+    100% {
+        transform: translateX(0px) translateY(0px) rotate(360deg);
+        background-color: #008000;
+    }
+}
+
+@keyframes miniSquare {
+    0% {
+        transform: rotate(0deg);
+        background-color: #d40000;
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+        background-color: #008000;
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        background-color: #d40000;
+    }
+}
+
+/*-----------------------
+    MEDIA CONTROLS
+-----------------------*/
+@media (max-width: 768px) {
+    /*
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #008000;
+        padding: 20px;
+        margin-top: 10px;
+        border: 2px solid #d40000;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    */
+
+    header .container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center; /* allow nav to move below */
+  }
+
+  /* show the hamburger */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* hide nav by default */
+  nav {
+    width: 100%;
+    display: none;
+  }
+
+  /* when active (menu open) */
+  nav.active {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/*Remove animation at smaller screens*/
+@media (min-width: 1800px) {
+    #square-collection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 0px;
+    }
 }
