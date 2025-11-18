@@ -168,6 +168,7 @@ p {
     left: 20px;
     animation: miniSquare 3s infinite ease-in;
 }
+
 /*
 @keyframes moveSquare {
     0% {
@@ -237,6 +238,42 @@ p {
     }
 }
 
+@keyframes randomMovement {
+    0% {
+        transform: translate(20px, 0) rotate(30deg);
+    }
+    25% {
+        transform: translate(40px, -20px) rotate(0deg);
+    }
+    50% {
+        transform: translate(-20px, 40px) rotate(-30deg);
+    }
+    75% {
+        transform: translate(40px, 20px) rotate(0deg);
+    }
+    100% {
+        transform: translate(20px, 0) rotate(30deg);
+    }
+}
+
+@keyframes randomColorChange {
+    0% {
+        color:#008000;
+    }
+    25% {
+        color: #ffffff;
+    }
+    50% {
+        color: #d40000;
+    }
+    75% {
+        color: #ffffff;
+    }
+    100% {
+        color:#008000
+    }
+}
+
 /*-----------------------
     MEDIA CONTROLS
 -----------------------*/
@@ -285,12 +322,25 @@ p {
     align-items: center;
     gap: 1rem;
   }
+
+  
+    #random-movement1 {
+        animation: randomMovement 5s infinite;
+    }
+
+    #random-movement2 {
+        animation: randomMovement 7s infinite alternate;
+    }
+
+    #random-color {
+        animation: randomColorChange 6s infinite;
+    }
 }
 
 /*Remove animation at smaller screens*/
 @media (min-width: 1800px) {
     #square-collection {
-        display: flex;
+        display: none; /*set to flex*/
         justify-content: center;
         align-items: center;
         gap: 20px;
