@@ -86,8 +86,8 @@ footer {
 ---------------------------- */
 
 main {
-    width: 90%;
-    margin: 30px auto;
+    width: 100%;
+    margin: 0px auto;
     flex: 1;
 }
 
@@ -150,49 +150,24 @@ p {
     display: none;
 }
 .square {
-    width: 80px;
-    height: 80px;
-    border-radius: 20px; /*Could be 20 or 40px*/
+    width: 40px;
+    height: 40px;
+    border-radius: 10px; /*Could be 20 or 40px*/
     background-color: #008000;
     margin: 4px auto;
     animation: moveSquare 3s infinite ease-in;
 }
 
 .inner-square {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px; /*Could be 10 or 20px*/
+    width: 20px;
+    height: 20px;
+    border-radius: 5px; /*Could be 10 or 20px*/
     background-color: #d40000; /* Red */
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     animation: miniSquare 3s infinite ease-in;
 }
-
-/*
-@keyframes moveSquare {
-    0% {
-        transform: translateX(0px) translateY(-30px) rotate(0deg);
-        background-color: #008000;
-    }
-    25% {
-        transform: translateX(30px) translateY(0px) rotate(90deg);
-        
-    }
-    50% {
-        transform: translateX(0px) translateY(30px) rotate(180deg);
-        background-color: #d40000;
-    }
-    75% {
-        transform: translateX(-30px) translateY(0px) rotate(270deg);
-        
-    }
-    100% {
-        transform: translateX(0px) translateY(-30px) rotate(360deg);
-        background-color: #008000;
-    }
-}
-*/
 
 @keyframes moveSquare {
     0% {
@@ -237,47 +212,10 @@ p {
         background-color: #d40000;
     }
 }
-
-@keyframes randomMovement {
-    0% {
-        transform: translate(20px, 0) rotate(30deg);
-    }
-    25% {
-        transform: translate(40px, -20px) rotate(0deg);
-    }
-    50% {
-        transform: translate(-20px, 40px) rotate(-30deg);
-    }
-    75% {
-        transform: translate(40px, 20px) rotate(0deg);
-    }
-    100% {
-        transform: translate(20px, 0) rotate(30deg);
-    }
-}
-
-@keyframes randomColorChange {
-    0% {
-        color:#008000;
-    }
-    25% {
-        color: #ffffff;
-    }
-    50% {
-        color: #d40000;
-    }
-    75% {
-        color: #ffffff;
-    }
-    100% {
-        color:#008000
-    }
-}
-
 /*-----------------------
     MEDIA CONTROLS
 -----------------------*/
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     /*
     nav ul {
         display: none;
@@ -323,6 +261,9 @@ p {
     gap: 1rem;
   }
 
+  .photo {
+    width: 100%;
+    }
   
     #random-movement1 {
         animation: randomMovement 5s infinite;
@@ -340,7 +281,7 @@ p {
 /*Remove animation at smaller screens*/
 @media (min-width: 1800px) {
     #square-collection {
-        display: none; /*set to flex*/
+        display: flex; /*set to flex*/
         justify-content: center;
         align-items: center;
         gap: 20px;

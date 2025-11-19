@@ -38,6 +38,13 @@ h2 {
     background: #006400;
 }
 
+.icon-move:hover {
+    animation: simpleMovement 1s infinite;
+}
+
+.icon-move:active {
+    pointer-events: none;
+}
 /* List */
 #todo-list li {
     padding: 10px;
@@ -58,4 +65,25 @@ h2 {
     flex: 1;
     align-self: center;
     text-align: center;
+}
+
+/*----------------
+    Animations
+----------------*/
+@keyframes simpleMovement {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
