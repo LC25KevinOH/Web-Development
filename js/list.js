@@ -51,6 +51,9 @@ list.addEventListener('click', (e) => {
     const span = li.querySelector('span');
     const oldText = span.textContent;
     li.innerHTML = `
+      <div>
+        <button class="check button-size" title="Check"><div class="icon-move"><i class="fa-solid fa-check" id="font-a"></i></div></button>
+      </div>
       <input type="text" class="edit-input" value="${oldText}" />
       <div>
         <button class="save button-size" title="Save"><div class="icon-move"><i class="fa-solid fa-box-archive" id="font-a"></i></div></button>
@@ -68,6 +71,9 @@ list.addEventListener('click', (e) => {
       return;
     }
     li.innerHTML = `
+      <div>
+        <button class="check button-size" title="Check"><div class="icon-move"><i class="fa-solid fa-check" id="font-a"></i></div></button>
+      </div>
       <span class="user-text">${newText}</span>
       <div>
         <button class="edit button-size" title="Edit"><div class="icon-move"><i class="fa-solid fa-paintbrush" id="font-a"></i></div></button>
