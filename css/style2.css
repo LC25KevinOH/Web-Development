@@ -84,6 +84,11 @@ body.media-body .media-link {
     text-shadow: #000 -1px 1px 0px;
 }
 
+.header-title:hover {
+    font-size: 3rem;
+    color: #d40000;
+    text-shadow: #000 -1px 1px 0px;
+}
 /*-------------------------
     Mobile menu toggle 
 --------------------------*/
