@@ -56,6 +56,32 @@ nav a {
 
 nav a:hover {
     color: #dcdcdc; /* Light grey hover */
+    text-decoration: underline;
+}
+
+body.index-body .index-link {
+    color: #d40000;
+    text-shadow: #000 -1px 1px 0px;
+}
+
+body.benefits-body .benefits-link {
+    color: #d40000;
+    text-shadow: #000 -1px 1px 0px;
+}
+
+body.list-body .list-link {
+    color: #d40000;
+    text-shadow: #000 -1px 1px 0px;
+}
+
+body.words-body .words-link {
+    color: #d40000;
+    text-shadow: #000 -1px 1px 0px;
+}
+
+body.media-body .media-link {
+    color: #d40000;
+    text-shadow: #000 -1px 1px 0px;
 }
 
 /*-------------------------
