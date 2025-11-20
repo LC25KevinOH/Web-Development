@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Toggle the translation visibility
             translation.style.display = 
-                translation.style.display === "block" ? "none" : "block";
+                translation.style.display === "flex" ? "none" : "flex";
+                translation.style.flexDirection = "column";
         });
     });
 });
