@@ -48,6 +48,18 @@ figcaption {
     color: #555;
 }
 
+.gallery-section-title {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+#section-title-images {
+    padding-top: 2rem;
+}
+
 /* Responsive */
 @media (max-width: 868px) {
     .gallery-container {
