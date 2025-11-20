@@ -38,16 +38,16 @@ function createTaskElement(text, completed = false) {
 
     li.innerHTML = `
         <div>
-            <button class="check button-size" title="Check">
+            <button class="check button-size" title="Check Task as Completed">
                 <div class="icon-move"><i class="fa-solid fa-check" id="font-a"></i></div>
             </button>
         </div>
         <span class="user-text">${text}</span>
         <div>
-            <button class="edit button-size" title="Edit">
+            <button class="edit button-size" title="Edit Task">
                 <div class="icon-move"><i class="fa-solid fa-paintbrush" id="font-a"></i></div>
             </button>
-            <button class="delete button-size" title="Delete">
+            <button class="delete button-size" title="Delete Task">
                 <div class="icon-move"><i class="fa-solid fa-trash-can" id="font-a"></i></div>
             </button>
         </div>
@@ -99,14 +99,14 @@ list.addEventListener('click', (e) => {
 
         li.innerHTML = `
             <div>
-                <button class="check button-size" title="Check">
+                <button class="check button-size" title="Check Task as Completed">
                     <div class="icon-move"><i class="fa-solid fa-check" id="font-a"></i></div>
                 </button>
             </div>
             <input type="text" class="edit-input" value="${oldText}">
             <div>
-                <button class="save button-size" title="Save"><div class="icon-move"><i class="fa-solid fa-box-archive" id="font-a"></i></div></button>
-                <button class="delete button-size" title="Delete"><div class="icon-move"><i class="fa-solid fa-trash-can" id="font-a"></i></div></button>
+                <button class="save button-size" title="Save Task Edit"><div class="icon-move"><i class="fa-solid fa-box-archive" id="font-a"></i></div></button>
+                <button class="delete button-size" title="Delete Task"><div class="icon-move"><i class="fa-solid fa-trash-can" id="font-a"></i></div></button>
             </div>
         `;
 
@@ -133,16 +133,16 @@ list.addEventListener('click', (e) => {
         } else {
             li.innerHTML = `
                 <div>
-                    <button class="check button-size" title="Check">
+                    <button class="check button-size" title="Check Task as Completed">
                         <div class="icon-move"><i class="fa-solid fa-check" id="font-a"></i></div>
                     </button>
                 </div>
                 <span class="user-text">${newText}</span>
                 <div>
-                    <button class="edit button-size" title="Edit">
+                    <button class="edit button-size" title="Edit Task">
                         <div class="icon-move"><i class="fa-solid fa-paintbrush" id="font-a"></i></div>
                     </button>
-                    <button class="delete button-size" title="Delete">
+                    <button class="delete button-size" title="Delete Task">
                         <div class="icon-move"><i class="fa-solid fa-trash-can" id="font-a"></i></div>
                     </button>
                 </div>
