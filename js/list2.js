@@ -110,7 +110,18 @@ list.addEventListener('click', (e) => {
             </div>
         `;
 
-        li.querySelector('.edit-input').focus();
+        // After creating the edit mode HTML:
+        const editField = li.querySelector('.edit-input');
+
+        editField.focus();
+        editField.setSelectionRange(oldText.length, oldText.length);
+
+        // Allow saving edits with Enter key
+        editField.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                li.querySelector('.save').click();
+            }
+        });
     }
 
     // Save edited text
