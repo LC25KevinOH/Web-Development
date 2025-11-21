@@ -2,7 +2,6 @@ h2 {
     text-align: center;
     color:#111;
 }
-
 /* Container */
 .todo-container {
     width: 100%;
@@ -12,20 +11,17 @@ h2 {
     padding: 20px;
     border-radius: 6px;
 }
-
 /* Input area */
 .todo-input {
     display: flex;
     gap: 10px;
 }
-
 #new-task {
     flex: 1;
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 4px;
 }
-
 #add-btn {
     padding: 10px 15px;
     background: #008000;
@@ -33,15 +29,12 @@ h2 {
     border: none;
     border-radius: 4px;
 }
-
 #add-btn:hover {
     background: #006400;
 }
-
 .icon-move:hover {
     animation: simpleMovement 1s infinite;
 }
-
 .icon-move:active {
     pointer-events: none;
 }
@@ -55,18 +48,15 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
-
 #todo-list li.completed {
     text-decoration: line-through;
     color: #666;
 }
-
 .user-text {
     flex: 1;
     align-self: center;
     text-align: center;
 }
-
 /*----------------
     Animations
 ----------------*/

@@ -1,19 +1,16 @@
 .benefit {
     margin-bottom: 30px;
     padding: 15px;
-    border-left: 4px solid #008000; /* green accent */
-    background: #f2f2f2; /* light grey */
+    border-left: 4px solid #008000;
+    background: #f2f2f2;
     border-radius: 4px;
 }
-
 .benefit h2 {
-    color: #d40000; /* red */
+    color: #d40000;
 }
-
 .center a {
     color: #008000;
 }
-
 #info-source {
     margin-top: 10px;
     margin-bottom: 20px;

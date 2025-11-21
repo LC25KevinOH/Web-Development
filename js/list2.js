@@ -1,11 +1,9 @@
-// ======== To-Do List Script with LocalStorage ========
-
 // DOM elements
 const input = document.getElementById('new-task');
 const addBtn = document.getElementById('add-btn');
 const list = document.getElementById('todo-list');
 
-// ⬅ Load tasks from storage on page load
+// Load tasks from storage on page load
 window.addEventListener('DOMContentLoaded', loadTasks);
 
 // Save current list to localStorage

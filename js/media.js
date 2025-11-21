@@ -1,4 +1,4 @@
-// Optional: lightbox functionality
+// Lightbox functionality
 const lightbox = document.getElementById('lightbox');
 const lightboxMedia = lightbox.querySelector('.lightbox-media');
 const closeBtn = lightbox.querySelector('.close');
