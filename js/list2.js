@@ -1,3 +1,4 @@
+// Interactive To-Do List JavaScript
 // DOM elements
 const input = document.getElementById('new-task');
 const addBtn = document.getElementById('add-btn');

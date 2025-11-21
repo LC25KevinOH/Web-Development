@@ -1,3 +1,4 @@
+  // Menu JavaScript
   // Handle the menu toggle (after includes load)
   document.addEventListener("click", (e) => {
     if (e.target.matches(".menu-toggle")) {

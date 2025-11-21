@@ -1,3 +1,4 @@
+// Media Gallery JavaScript
 // Lightbox functionality
 const lightbox = document.getElementById('lightbox');
 const lightboxMedia = lightbox.querySelector('.lightbox-media');

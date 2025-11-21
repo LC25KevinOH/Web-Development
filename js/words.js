@@ -1,3 +1,4 @@
+// Interactive Words and Phrases JavaScript
 document.addEventListener("DOMContentLoaded", () => {
     const phrases = document.querySelectorAll(".phrase");
 

@@ -1,3 +1,6 @@
+/*-------------------
+    Media Gallery
+--------------------*/
 h2 {
     text-align: center;
     color:#111;
@@ -50,7 +53,9 @@ figcaption {
 #section-title-images {
     padding-top: 2rem;
 }
-/* Responsive */
+/*-------------------- 
+    Responsiveness
+---------------------*/
 @media (max-width: 868px) {
     .gallery-container {
         grid-template-columns: 1fr;

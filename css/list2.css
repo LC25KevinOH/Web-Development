@@ -1,8 +1,13 @@
+/*-------------------
+    To-Do List Page
+-------------------*/
 h2 {
     text-align: center;
     color:#111;
 }
-/* Container */
+/*------------------
+    Container 
+--------------------*/
 .todo-container {
     width: 100%;
     max-width: 600px;
@@ -11,7 +16,9 @@ h2 {
     padding: 20px;
     border-radius: 6px;
 }
-/* Input area */
+/*-----------------
+    Input area 
+------------------*/
 .todo-input {
     display: flex;
     gap: 10px;
@@ -38,7 +45,9 @@ h2 {
 .icon-move:active {
     pointer-events: none;
 }
-/* List */
+/*-----------
+    List 
+-----------*/
 #todo-list li {
     padding: 10px;
     background: white;

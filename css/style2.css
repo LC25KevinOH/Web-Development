@@ -1,5 +1,5 @@
 /* ---------------------------
-   GLOBAL BASE STYLING
+   Base Styling
 ---------------------------- */
 * {
     margin: 0;
@@ -20,7 +20,7 @@ body {
     padding: 2rem;
 }
 /* ---------------------------
-   HEADER
+   Header
 ---------------------------- */
 header {
     background: #008000;
@@ -88,7 +88,7 @@ body.media-body .media-link {
     font-size: 1.6rem;
 }
 /* ---------------------------
-   FOOTER
+   Footer
 ---------------------------- */
 footer {
     padding: 15px 0;
@@ -109,7 +109,7 @@ footer {
     padding: 1rem;
 }
 /* ---------------------------
-   MAIN CONTENT
+   Main Content
 ---------------------------- */
 main {
     width: 100%;
@@ -126,7 +126,7 @@ p {
     text-align: center;
 }
 /* ---------------------------
-   INDEX PAGE GLOBAL ELEMENTS
+    Landing Page
 ---------------------------- */
 .photo {
     width: 60%;
@@ -161,7 +161,7 @@ p {
   height: 4rem;  
 }
 /* -----------------
-   ANIMATIONS
+   Animations
 ----------------- */
 #square-collection {
     display: none;
@@ -169,7 +169,7 @@ p {
 .square {
     width: 40px;
     height: 40px;
-    border-radius: 10px; /*Could be 20 or 40px*/
+    border-radius: 10px;
     background-color: #008000;
     margin: 4px auto;
     animation: moveSquare 3s infinite ease-in;
@@ -177,8 +177,8 @@ p {
 .inner-square {
     width: 20px;
     height: 20px;
-    border-radius: 5px; /*Could be 10 or 20px*/
-    background-color: #d40000; /* Red */
+    border-radius: 5px;
+    background-color: #d40000;
     position: relative;
     top: 10px;
     left: 10px;
@@ -227,7 +227,7 @@ p {
     }
 }
 /*-----------------------
-    MEDIA CONTROLS
+    Responsiveness
 -----------------------*/
 @media (max-width: 868px) {
     header .container {
@@ -259,7 +259,7 @@ p {
     width: 100%;
   }
 }
-/*Remove animation at smaller screens*/
+/*Only show animations for larger screens*/
 @media (min-width: 1800px) {
     #square-collection {
         display: flex;

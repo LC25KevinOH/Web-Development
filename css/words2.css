@@ -1,3 +1,6 @@
+/* ---------------------------
+   Words and Phrases Page
+----------------------------*/
 .phrase-list {
     display: flex;
     flex-direction: column;
@@ -45,6 +48,9 @@
     padding-top: 2rem;
     font-size: 2rem;
 }
+/*-----------------------
+    Responsiveness
+-----------------------*/
 @media (max-width: 868px){
     .phrase {
         width: fit-content;

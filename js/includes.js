@@ -1,3 +1,4 @@
+// Load Header and Footer JavaScript
 document.addEventListener("DOMContentLoaded", () => {
   const includes = document.querySelectorAll("[data-include]");
   
